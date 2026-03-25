@@ -5,11 +5,11 @@ import { TbCoinTakaFilled } from "react-icons/tb";
 
 const Navbar = ({coin}) => {
     return (
-        <div className='flex justify-between items-center px-15 pt-2 border-b sticky top-0 z-50 backdrop-blur-md bg-black/40'>
+        <div className='flex flex-col lg:flex-row justify-between items-center px-15 pt-2 border-b lg:sticky top-0 z-50 backdrop-blur-md bg-black/40'>
             <div>
                 <img className='w-15' src={img} alt="Logo" />
             </div>
-            <ul className='flex justify-center items-center gap-8 font-semibold'>
+            <ul className='flex flex-wrap mb-5 lg:mb-0 justify-center items-center gap-7 lg:gap-8 font-semibold'>
                 <li>Home</li>
                 <li>Fixture</li>
                 <li>Teams</li>

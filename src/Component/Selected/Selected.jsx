@@ -1,7 +1,7 @@
 import React from 'react';
 import { MdDeleteForever } from "react-icons/md";
 
-const Selected = ({pp,k, setCoin={setCoin}}) => {
+const Selected = ({pp,k,setCoin}) => {
 
     const a = () => {
         k(pp.player_name)
