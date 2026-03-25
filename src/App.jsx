@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import Navbar from './Component/Navbar/Navbar';
 import Bannar from './Component/Bannar/Bannar';
 import Both from './Component/BothComponent/Both';
+import Footer from './Component/Footer/Footer';
+import Footer2 from './Component/Footer/Footer2';
+import Logobanner from './Component/LogoBanner/Logobanner';
 
 const App = () => {
 
@@ -13,7 +16,10 @@ const App = () => {
         <div className='max-w-[90%] mx-auto'>
           <Bannar></Bannar>
           <Both coin={coin} setCoin={setCoin}></Both>
-      </div>
+          <Logobanner></Logobanner>
+        </div>
+        <Footer></Footer>
+        <Footer2></Footer2>
     </div>
   );
 };

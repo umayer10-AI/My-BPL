@@ -14,8 +14,8 @@ const Navbar = ({coin}) => {
                 <li>Fixture</li>
                 <li>Teams</li>
                 <li>Schedules</li>
-                <li className='flex items-center gap-2 font-bold border py-1.5 px-2 rounded-lg'><span>{coin}</span> Coin <TbCoinTakaFilled /></li>
             </ul>
+            <h2 className='flex items-center gap-2 font-bold border py-1.5 px-2 rounded-lg'><span>{coin}</span> Coin <TbCoinTakaFilled /></h2>
         </div>
     );
 };
