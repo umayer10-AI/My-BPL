@@ -1,11 +1,23 @@
 import React from 'react';
 import { MdDeleteForever } from "react-icons/md";
+import { toast,Bounce } from 'react-toastify';
 
 const Selected = ({pp,k,setCoin}) => {
 
     const a = () => {
         k(pp.player_name)
         setCoin(c => c + Number(pp.price))
+        toast(`Player romoved`, {
+                position: "top-center",
+                autoClose: 500,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                transition: Bounce,
+                theme: "dark",
+            });
     }
 
     return (
